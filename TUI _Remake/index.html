@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="./images/TUI.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+
+    <title>Tive uma ideia</title>
+
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <div class=" w-100" style="height: 0px;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-1 px-4 header">
+        <div class=" container-fluid col-12 col-sm-12 col-md-10 col-lg-10">
+
+          <img src="./images/TUI_Extendido_W.png" style="height: 45px;" class="d-inline-block align-top mx-auto my-1 pr-4" alt="">
+
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">SOBRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#software">SOFTWARE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#design">DESIGN</a>
+              </li>
+            </ul>
+            <a class="nav-link btn btn-outline-light m-1" href="#contato">Entre em contato</a>
+          </div>
+        </div>
+      </nav>
+      <div class="row mx-auto" style="width: 100%; height: 0px;">
+        <img src="./images/TUI_Extendido_W.png" class=" mx-auto col-11 col-sm-11 col-md-7 col-lg-7 px-0 pt-5 mt-5 click-through" alt="">
+      </div>
+    </div>
+    <!-- FIM NAVBAR -->
+
+    <!-- PARTICLES -->
+    <div id="particles-js">
+
+      <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas>
+    </div>
+    <!-- FIM PARTICLES -->
+
+    <!-- CONTEUDO -->
+    <div class="container-fluid bg-light mx-auto p-0 col-12 col-sm-12 col-md-11 col-lg-11" >
+
+      <!-- EXPLICAÇÃO SISTEMAS -->
+      <div class="abaTabela col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+        <div class=" col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+          <div class="text-center p-2">
+            <h1 style=" font-weight: 300; ">Para que serve um <b style=" font-weight: 700; ">sistema</b> ?</h1>
+          </div>
+          <div class="container-fluid p-0" >
+            <div class="col-12 col-sm-12 col-md-9 col-lg-9 mx-auto my-3">
+              <div class="row my-3">
+                <img src="./images/software_icon_01.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                <img src="./images/software_icon_02.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                <img src="./images/software_icon_03.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                <img src="./images/software_icon_04.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                <img src="./images/software_icon_05.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                <img src="./images/software_icon_06.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIM EXPLICAÇÃO SISTEMAS -->
+
+      <!-- TAB DE CONTEÚDO - SOBRE -->
+      <div class="abaTabela col-12 col-sm-12 col-md-11 col-lg-10 mx-auto" id="sobre">
+        <div class="text-center">
+          <h1><i>Sobre a empresa</i></h1>
+        </div>
+
+        <!-- BOTÕES DA TAB -->
+        <div class="container-fluid abas" >
+          <div class="row my-3">
+            <div class="px-1 col-12 col-sm-12 col-md-4 col-lg-4 ">
+              <button class="abaBtn py-2 mx-auto border w-100" style="height: 100%;" onclick="abreAba(event, 'hist')" id="defaultOpen">História</button>
+            </div>
+            <div class="px-1 col-12 col-sm-12 col-md-4 col-lg-4 ">
+              <button class="abaBtn py-2 mx-auto border w-100" style="height: 100%;" onclick="abreAba(event, 'mvv')">Ideais</button>
+            </div>
+            <div class="px-1 col-12 col-sm-12 col-md-4 col-lg-4 ">
+              <button class="abaBtn py-2 mx-auto border w-100" style="height: 100%;" onclick="abreAba(event, 'fundadores')">Fundadores</button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM BOTÕES DA TAB-->
+
+        <!-- ABA HISTÓRIA -->
+        <div id="hist" class="abaCont col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+          <h2 class="m-0 mt-4 mx-2"style=" font-weight: 300; ">Nossa</h2>
+          <h2 class="m-0 mb-3 mx-2"style=" font-weight: 700; ">História</h2>
+          <p class="text-break">A <b style=" font-weight: 700; ">TUI</b> foi criada em 2017 com o objetivo de desenvolver projetos pautados pelos idealizadores, como aplicativos móveis e jogos</p>
+          <p class="text-break">Somos uma empresa de tecnologia focada em desenvolvimento de <b style=" font-weight: 700; ">sistemas especializados</b>, expandindo para a integração de <b style=" font-weight: 700; ">novas tecnologias</b> e diferentes serviços.</p>
+          <p class="text-break">A pesar de inicialmente desenvolvermos aplicações especializadas somente para desktop, a perspectiva é um maior investimento em <b style=" font-weight: 700; ">aplicações WEB e mobile</b>, trazendo uma maior versatilidade e usabilidade</p>
+        </div>
+        <!-- FIM ABA HISTORIA -->
+
+        <!-- ABA MISSÃO, VISÃO E VALORES -->
+        <div id="mvv" class="abaCont col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+          <h2 class="m-0 mt-4 mx-2"style=" font-weight: 300; ">Nossa</h2>
+          <h2 class="m-0 mb-3 mx-2"style=" font-weight: 700; ">Missão</h2>
+          <p class="text-break">Desenvolver <b style=" font-weight: 700; ">soluções intuitivas</b> que ajudem a otimizar e automatizar a organização de empresas, trazendo mais <b style=" font-weight: 700; ">valor e funcionalidades</b>valor e funcionalidades para seus dados, assim ajudando no crescimento dos negócios.</p>
+          <p class="text-break">Criar aplicações que auxiliam em diferentes situações cotidianas, resolvendo de maneira simples para o usuário, e trazendo maior <b style=" font-weight: 700; ">conforto e facilidade</b>.</p>
+          <h2 class="m-0 mt-5 mx-2"style=" font-weight: 300; ">Nossos</h2>
+          <h2 class="m-0 mb-3 mx-2"style=" font-weight: 700; ">Valores</h2>
+          <div class="container-fluid">
+            <div class="row my-3">
+              <ul class="list-group col-12 col-sm-12 col-md-6 col-lg-6 mx-auto my-2">
+                <li class="list-group-item bg-transparent"><i>Boas relações com nossos clientes</i></li>
+                <li class="list-group-item bg-transparent"><i>Trazer facilidade</i></li>
+                <li class="list-group-item bg-transparent"><i>Criatividade</i></li>
+              </ul>
+              <ul class="list-group col-12 col-sm-12 col-md-6 col-lg-6 mx-auto my-2">
+                <li class="list-group-item bg-transparent"><i>Qualidade</i></li>
+                <li class="list-group-item bg-transparent"><i>Responsabilidade</i></li>
+                <li class="list-group-item bg-transparent"><i>Criatividade</i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- FIM ABA MISSAO, VISÃO E VALORES -->
+
+        <!-- ABA FUNDADORES -->
+        <div id="fundadores" class="abaCont col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+          <h3>Integrantes</h3>
+
+            <div class="container-fluid">
+              <div class="row my-3">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 my-3">
+                  <div class="card rounded-0 px-3 pt-3 bg-white w-auto" style="height: 100%;">
+                    <img src="./images/integrante_icon_01.png" class="card-img-top rounded-circle w-75 mx-auto" alt="...">
+                    <div class="card-body py-3 px-0">
+                      <h5 class="card-title text-center"><i>Tiago Neiva</i></h5>
+                      <a href="https://www.linkedin.com/in/tiago-neiva-andrade-589181177/" class="btn btn-primary w-100" >LinkedIn</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 my-3">
+                  <div class="card rounded-0 px-3 pt-3 bg-white w-auto" style="height: 100%;">
+                    <img src="./images/integrante_icon_02.png" class="card-img-top rounded-circle w-75 mx-auto" alt="...">
+                    <div class="card-body py-3 px-0">
+                      <h5 class="card-title text-center"><i>Fellipe Corominas</i></h5>
+                      <a href="https://www.linkedin.com/in/fellipe-corominas-854729163/" class="btn btn-primary w-100">LinkedIn</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 my-3">
+                  <div class="card rounded-0 px-3 pt-3 bg-white w-auto" style="height: 100%;">
+                    <img src="./images/integrante_icon_03.png" class="card-img-top rounded-circle w-75 mx-auto" alt="...">
+                    <div class="card-body py-3 px-0">
+                      <h5 class="card-title text-center"><i>Danilo Nogueira</i></h5>
+                      <a href="https://www.linkedin.com/in/danilo-nogueira-426742145/" class="btn btn-primary w-100">LinkedIn</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 my-3">
+                  <div class="card rounded-0 px-3 pt-3 bg-white w-auto" style="height: 100%;">
+                    <img src="./images/integrante_icon_04.png" class="card-img-top rounded-circle w-75 mx-auto" alt="...">
+                    <div class="card-body py-3 px-0">
+                      <h5 class="card-title text-center"><i>André Beolchi</i></h5>
+                      <a href="https://www.linkedin.com/in/andre-garbini-72786a178/" class="btn btn-primary w-100">LinkedIn</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- FIM ABA FUNDADORES -->
+
+          <!-- SCRIPT DA TAB SOBRE -->
+          <script>
+            document.getElementById("defaultOpen").click();
+            function abreAba(event, nomeAba) {
+              var i, abaCont, abaBtn;
+              abaCont = document.getElementsByClassName("abaCont");
+              for (i = 0; i < abaCont.length; i++) {
+                abaCont[i].style.display = "none";
+              }
+              abaBtn = document.getElementsByClassName("abaBtn");
+              for (i = 0; i < abaBtn.length; i++) {
+                abaBtn[i].className = abaBtn[i].className.replace(" active", "");
+              }
+              document.getElementById(nomeAba).style.display = "block";
+              event.currentTarget.className += " active";
+            }
+          </script>
+          <!-- FIM SCRIPT TAB SOBRE -->
+        </div>
+
+        <!-- FIM TAB SOBRE -->
+
+
+        <!-- TAB DE CONTEÚDO - SOFTWARE -->
+        <div class="abaTabela col-12 col-sm-12 col-md-11 col-lg-10 mx-auto" id="software">
+          <div class="text-center">
+            <h1><i>Nossos serviços de Software</i></h1>
+          </div>
+
+          <!-- BOTÕES DA TAB -->
+          <div class="container-fluid abas">
+            <div class="row my-3">
+              <div class="px-1 col-12 col-sm-12 col-md-4 col-lg-4 ">
+                <button class="abaBtn2 py-2 mx-auto border w-100" style="height: 100%;" onclick="abreAba2(event, 'demanda')" id="defaultOpen2">Sistemas sob Demanda</button>
+              </div>
+              <div class="px-1 col-12 col-sm-12 col-md-4 col-lg-4 ">
+                <button class="abaBtn2 py-2 mx-auto border w-100" style="height: 100%;" onclick="abreAba2(event, 'licenca')">Sistemas Licenciados</button>
+              </div>
+              <div class="px-1 col-12 col-sm-12 col-md-4 col-lg-4 ">
+                <button class="abaBtn2 py-2 mx-auto border w-100" style="height: 100%;" onclick="abreAba2(event, 'sites')">Sites</button>
+              </div>
+            </div>
+          </div>
+          <!-- FIM BOTÕES DA TAB -->
+
+          <!-- ABA SOB DEMANDA -->
+          <div id="demanda" class="abaCont2 col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+            <h2 class="m-0 mt-4 mx-2"style=" font-weight: 300; ">Software</h2>
+            <h2 class="m-0 mb-3 mx-2"style=" font-weight: 700; ">Sob Medida</h2>
+            <p class="text-break">A TUI oferece um serviço de desenvolvimento de <b style=" font-weight: 700; ">sistemas sob demanda</b>, seguindo um processo organizacional. Nossa equipe de Analistas será enviada para fazer o levantamento de requisitos na sua empresa, e ao <b style=" font-weight: 700; ">entender como funciona o seu negócio</b>, faremos um sistema feito sob medida para você, visando <b style=" font-weight: 700; ">maximizar sua performance</b> e resolver seus problemas administrativos</p>
+            <div class="container-fluid p-0" >
+              <div class="col-12 col-sm-12 col-md-9 col-lg-9 mx-auto">
+                <div class="row my-3">
+                  <img src="./images/demanda_icon_01.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/demanda_icon_02.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/demanda_icon_03.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/desenvolvimento_icon_04.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/desenvolvimento_icon_05.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/desenvolvimento_icon_06.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIM SOB DEMANDA -->
+
+          <!-- ABA LICENCIADOS -->
+          <div id="licenca" class="abaCont2 col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+            <h2 class="m-0 mt-4 mx-2"style=" font-weight: 300; ">Software</h2>
+            <h2 class="m-0 mb-3 mx-2"style=" font-weight: 700; ">Licensiado</h2>
+            <p class="text-break">Softwares como o <b style=" font-weight: 700; ">TUI-Gerenciamento</b> foram desenvolvidos para tornar mais acessível o uso de aplicações de gerenciamento empresarial. A partir de uma mensalidade, conseguimos fornecer um software mais barato que atende suas necessidades gerais, úteis para a maioria dos diferentes tipos de negócio.</p>
+            <div class="container-fluid" >
+              <div class="col-12 col-sm-12 col-md-9 col-lg-9 mx-auto">
+                <div class="row my-3">
+                  <img src="./images/licenca_icon_01.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/licenca_icon_02.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/licenca_icon_03.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/desenvolvimento_icon_04.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/desenvolvimento_icon_05.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/desenvolvimento_icon_06.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FIM ABA LICENCIADOS -->
+
+          <!-- ABA APICAÇÕES WEB -->
+          <div id="sites" class="abaCont2 col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+            <h2 class="m-0 mt-4 mx-2"style=" font-weight: 300; ">Aplicações</h2>
+            <h2 class="m-0 mb-3 mx-2"style=" font-weight: 700; ">Web</h2>
+            <p class="text-break">Com <b style=" font-weight: 700; ">desenvolvimento de sites</b>, ou aplicações web, temos como finalidade fornecer uma ferramenta que permita a divulgação e expansão do seu negócio e das informações de sua empresa, para que seus clientes tenham fácil acesso a qualquer momento. Os sites são <b style=" font-weight: 700; ">totalmente personalizados</b>, atendendo às suas necessidades e preferências, em conjunto com a elaboração de ideias da nossa equipe de design</p>
+            <div class="container-fluid p-0" >
+              <div class="col-12 col-sm-12 col-md-9 col-lg-9 mx-auto">
+                <div class="row my-3">
+                  <img src="./images/web_icon_01.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/web_icon_02.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/web_icon_03.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/desenvolvimento_icon_04.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/desenvolvimento_icon_05.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                  <img src="./images/desenvolvimento_icon_06.png" class="mx-auto col-6 col-sm-6 col-md-4 col-lg-4 my-2 p-0" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FIM ABA APLICAÇÕES WEB -->
+
+          <!-- SCRIPT DA TAB SOFTWARE -->
+          <script>
+            document.getElementById("defaultOpen2").click();
+            function abreAba2(event, nomeAba) {
+              var i, abaCont, abaBtn;
+              abaCont = document.getElementsByClassName("abaCont2");
+              for (i = 0; i < abaCont.length; i++) {
+                abaCont[i].style.display = "none";
+              }
+              abaBtn = document.getElementsByClassName("abaBtn2");
+              for (i = 0; i < abaBtn.length; i++) {
+                abaBtn[i].className = abaBtn[i].className.replace(" active", "");
+              }
+              document.getElementById(nomeAba).style.display = "block";
+              event.currentTarget.className += " active";
+            }
+          </script>
+          <!-- FIM SCRIPT TAB SOFTWARE -->
+
+        </div>
+        <!-- FIM TAB DE CONTEÚDO - SOFTWARE -->
+
+        <!-- TAB DE CONTEÚDO - DESIGN -->
+        <div class="abaTabela col-12 col-sm-12 col-md-11 col-lg-10 mx-auto" id="design">
+          <div class="text-center">
+            <h1><i>Nossos serviços de Design</i></h1>
+          </div>
+
+          <!-- BOTÕES DA TAB -->
+          <div class="container-fluid abas">
+            <div class="row my-3">
+              <div class="px-1 col-12 col-sm-12 col-md-4 col-lg-4 ">
+                <button class=" abaBtn3 py-2 mx-auto border w-100" style="height: 100%;" onclick="abreAba3(event, 'logos')" id="defaultOpen3">Logos</button>
+              </div>
+              <div class="px-1 col-12 col-sm-12 col-md-4 col-lg-4">
+                <button class=" abaBtn3 py-2 mx-auto border w-100" style="height: 100%;" onclick="abreAba3(event, 'cartao')">Cartões de Visita</button>
+              </div>
+              <div class="px-1 col-12 col-sm-12 col-md-4 col-lg-4">
+                <button class=" abaBtn3 py-2 mx-auto border w-100" style="height: 100%;" onclick="abreAba3(event, 'escritorio')">Identidade Visual</button>
+              </div>
+            </div>
+          </div>
+          <!-- FIM BOTÕES DA TAB -->
+
+          <!-- ABA LOGOS -->
+          <div id="logos" class="abaCont3 col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+            <h2 class="m-0 mt-4 mx-2"style=" font-weight: 300; ">Design</h2>
+            <h2 class="m-0 mb-3 mx-2"style=" font-weight: 700; ">de Logotipo</h2>
+            <p class="text-break">Elaboração de logotipo com estilo simplista e moderno, para empresas de qualquer segmento. Criamos o logotipo de acordo com com direito a 3 revisões. Você nos manda instruções de como quer que seja a logo e nós desenvolvemos</p>
+            <div class="container-fluid p-0">
+              <div class="row my-5">
+                <img src="./images/TUI_Extendido_B.png" class="col-11 col-sm-11 col-md-5 col-lg-5 p-5 mx-auto bg-white border" alt="">
+                <img src="./images/TUI_Extendido_W.png" class="col-11 col-sm-11 col-md-5 col-lg-5 p-5 mx-auto bg-dark border" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- FIM ABA LOGOS -->
+
+          <!-- ABA CARTÕES -->
+          <div id="cartao" class="abaCont3 col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+            <h2 class="m-0 mt-4 mx-2"style=" font-weight: 300; ">Design</h2>
+            <h2 class="m-0 mb-3 mx-2"style=" font-weight: 700; ">de Cartão</h2>
+            <p>Fazemos cartões de visita personalizados de acordo com o seu negócio. Você pode escolher os acabamentos e formato que mais lhe agradar, com direito a algumas revisões</p>
+            <div class="container-fluid">
+              <div class="row">
+                <img src="./images/cartao_F.png" class="col-11 col-sm-11 col-md-5 col-lg-5 p-0 my-1 mx-auto" alt="">
+                <img src="./images/cartao_T.png" class="col-11 col-sm-11 col-md-5 col-lg-5 p-0 my-1 mx-auto" alt="">
+              </div>
+            </div>
+            <p><i style=" font-weight: 300; ">É necessário possuir ou contratar o desenvolvimento de uma LOGO para que o cartão seja feito</i></p>
+
+          </div>
+          <!-- FIM ABA CARTÕES -->
+
+          <!-- ABA ESCRITÓRIO -->
+          <div id="escritorio" class="abaCont3 col-12 col-sm-12 col-md-11 col-lg-10 mx-auto">
+            <h2 class="m-0 mt-4 mx-2"style=" font-weight: 300; ">Design de</h2>
+            <h2 class="m-0 mb-3 mx-2"style=" font-weight: 700; ">Identidade visual</h2>
+            <p>Design de <b style=" font-weight: 700; ">materiais de escritório</b> e <b style=" font-weight: 700; ">papelaria</b>, fortalecendo a marca e padronizando os documentos, assim como a confecção de artes para brindes. Fazemos design de papel timbrado e outros documentos, envelopes, pastas, canetas, canecas, caixas e outros.</p>
+            <div class="container-fluid">
+              <div class="row">
+              </div>
+            </div>
+            <p><i style=" font-weight: 300; ">É necessário possuir ou contratar o desenvolvimento de uma LOGO para as artes sejam feitas</i></p>
+
+          </div>
+          <!-- FIM ABA ESCRITÓRIO -->
+
+          <!-- SCRIPT DA TAB DESIGN -->
+          <script>
+            document.getElementById("defaultOpen3").click();
+            function abreAba3(event, nomeAba) {
+              var i, abaCont, abaBtn;
+              abaCont = document.getElementsByClassName("abaCont3");
+              for (i = 0; i < abaCont.length; i++) {
+                abaCont[i].style.display = "none";
+              }
+              abaBtn = document.getElementsByClassName("abaBtn3");
+              for (i = 0; i < abaBtn.length; i++) {
+                abaBtn[i].className = abaBtn[i].className.replace(" active", "");
+              }
+              document.getElementById(nomeAba).style.display = "block";
+              event.currentTarget.className += " active";
+            }
+          </script>
+          <!-- FIM SCRIPT DA TAB DESIGN -->
+
+        </div>
+        <!-- FIM TAB DE CONTEÚDO - DESIGN -->
+
+        <!-- ÁREA CONTATOS -->
+        <div class="container-flex">
+          <div class="mx-auto mb-5 border rounded col-11 col-sm-11 col-md-11 col-lg-11 p-0 bg-white"  id="contato">
+
+            <div>
+              <h1 class="text-center">Contato</h1>
+            </div>
+            <form class="" action="index.html" method="post">
+              <div class="form-group col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+              </div>
+              <div class="form-group col-12 col-sm-12 col-md-6 col-lg-4 my-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
+              </div>
+
+              <div class="form-group col-12 col-sm-12 col-md-6 col-lg-3 mb-3">
+                <label for="assunto">Assunto</label>
+                <select class="custom-select m-0" id="assunto">
+                  <option selected>Escolha uma opção</option>
+                  <option value="1">Software</option>
+                  <option value="2">Design</option>
+                  <option value="3">Outros</option>
+                </select>
+              </div>
+
+              <div class="form-group col-12 col-sm-12 col-md-12 col-lg-8">
+                <label for="descricao">Descrição</label>
+                <textarea class="form-control infoTxt" aria-label="With textarea" maxlength="500" oninput="" id="descricao"></textarea>
+              </div>
+
+              <div class="input-group col-12 col-sm-12 col-md-3 col-lg-3 my-3">
+                <input type="submit" value="Enviar" class="  btn btn-primary btn-lg input-group ">
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <!-- FIM ÁREA CONTATOS -->
+
+      </div>
+      <!-- FIM CONTEÚDO -->
+
+      <!-- FOOTER -->
+      <div class="container-fluid bg-darkTUI w-auto footer mb-0">
+        <div class="row p-2 col-12 col-sm-12 col-md-9 col-lg-8 mx-auto">
+          <div class="">
+            <p class="text-16 my-2 text-white">Copyright © 2019 Tive uma ideia. Todos os direitos reservados</p>
+
+          </div>
+          <div class="ml-auto">
+            <a href="https://www.facebook.com/tuideiasys" class="navbar-brand">
+              <img src="./images/FB_W.png" style="height: 30px;" class="d-inline-block">
+            </a>
+            <a href="https://github.com/Niaev/site-tui" class="navbar-brand">
+              <img src="./images/GH_W.png" style="height: 30px;" class="d-inline-block">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- FIM FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+
+  </body>
+</html>
